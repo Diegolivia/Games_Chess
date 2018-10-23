@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <title>Ajedrez v1.3</title>
+  <link rel="stylesheet" href="css/chessboard2.css" />
+</head>
+<body>
+
+<p>Prueba de mapa para ajedrez</p>
+
+</h3>
+<div id="board" class="board"></div>
+<br>
+<div class="info">
+    Search depth:
+    <select id="search-depth">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
+    <br>
+    <span>Positions evaluated: <span id="position-count"></span></span>
+    <br>
+    <span>Time: <span id="time"></span></span>
+    <br>
+    <span>Positions/s: <span id="positions-per-s"></span> </span>
+    <br>
+    <br>
+    <div id="move-history" class="move-history">
+    </div>
+</div>
+
+
+<script src="js/json3.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/chessboard.js"></script>
+<script src="js/chess.js"></script>
+<script src="js/chess.min.js"></script>
+<script src="js/IAFINAL.js"></script>
+</body>
+</html>
