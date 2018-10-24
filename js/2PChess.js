@@ -37,28 +37,28 @@ var onSnapEnd = function() {
 var updateStatus = function() {
   var status = '';
 
-  var moveColor = 'White';
+  var moveColor = 'Blanco';
   if (game.turn() === 'b') {
-    moveColor = 'Black';
+    moveColor = 'Negro';
   }
 
   // checkmate?
   if (game.in_checkmate() === true) {
-    status = 'Game over, ' + moveColor + ' is in checkmate.';
+    status = 'Game over, ' + moveColor + ' esta en jaque mate.';
   }
 
   // draw?
   else if (game.in_draw() === true) {
-    status = 'Game over, drawn position';
+    status = 'Game over, se hicieron tablas';
   }
 
   // game still on
   else {
-    status = moveColor + ' to move';
+    status = moveColor + ' debe mover.';
 
     // check?
     if (game.in_check() === true) {
-      status += ', ' + moveColor + ' is in check';
+      status += ', ' + moveColor + ' esta en jaque';
     }
   }
 
