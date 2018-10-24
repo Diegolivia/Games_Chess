@@ -3,6 +3,11 @@
     margin: auto
 }
 
+#inner {
+  display: table;
+  margin: 0 auto;
+}
+
 .info {
     width: 400px;
     margin: auto;
